@@ -1,0 +1,38 @@
+#!/sbin/runscript
+#
+# timedNetworkShutdown This starts and stops timedNetworkShutdown
+#
+# chkconfig: 2345 12 88
+# description: timedNetworkShutdown is a service which consults a server about shutting down the machine
+# processname: timedNetworkShutdown
+# pidfile: /var/run/timedNetworkShutdown.pid
+### BEGIN INIT INFO
+# Provides: $timedNetworkShutdown
+### END INIT INFO
+
+# Source function library.
+#. /etc/init.d/functions
+
+binary="/root/timedNetworkShutdown.pl"
+
+[ -x $binary ] || exit 0
+
+RETVAL=0
+
+start() {
+	ebegin "Starting timedNetworkShutdown"
+		start-stop-daemon --start --exec $binary -- --no-notify
+		eend $?
+}
+
+stop() {
+	ebegin "Shutting down timedNetworkShutdown: "
+	start-stop-daemon --stop --exec ${binary} --pidfile /var/run/timedNetworkShutdown.pid
+	eend $?
+}
+
+restart() {
+	ebegin "Restarting timedNetworkShutdown: "
+	svc_stop
+	svc_start
+}
