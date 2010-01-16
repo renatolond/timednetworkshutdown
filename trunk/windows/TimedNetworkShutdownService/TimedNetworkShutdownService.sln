@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimedNetworkShutdownService", "TimedNetworkShutdownService\TimedNetworkShutdownService.csproj", "{644B528B-EE9B-4AED-A8DF-9127304677D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{644B528B-EE9B-4AED-A8DF-9127304677D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644B528B-EE9B-4AED-A8DF-9127304677D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644B528B-EE9B-4AED-A8DF-9127304677D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644B528B-EE9B-4AED-A8DF-9127304677D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
