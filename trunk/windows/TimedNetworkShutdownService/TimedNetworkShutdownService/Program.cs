@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.ServiceProcess;
 using System.Text;
 
-namespace TimedShutdownService
+namespace TimedNetowrkShutdownService
 {
     static class Program
     {
@@ -19,7 +19,7 @@ namespace TimedShutdownService
             //
             //   ServicesToRun = new ServiceBase[] {new Service1(), new MySecondUserService()};
             //
-            ServicesToRun = new ServiceBase[] { new TimedShutdownService() };
+            ServicesToRun = new ServiceBase[] { new TimedNetworkShutdownService() };
 
             ServiceBase.Run(ServicesToRun);
         }

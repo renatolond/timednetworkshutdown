@@ -1,6 +1,6 @@
-namespace TimedShutdownService
+namespace TimedNetowrkShutdownService
 {
-    partial class TimedShutdownService
+    partial class TimedNetworkShutdownService
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,23 +28,24 @@ namespace TimedShutdownService
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.timerWakeUp = new System.Windows.Forms.Timer(this.components);
+            this.timerWakeUp = new System.Timers.Timer();
+            ((System.ComponentModel.ISupportInitialize)(this.timerWakeUp)).BeginInit();
             // 
             // timerWakeUp
             // 
-            this.timerWakeUp.Tick += new System.EventHandler(this.timerWakeUp_Tick);
+            this.timerWakeUp.Enabled = true;
             // 
-            // TimedShutdownService
+            // TimedNetworkShutdownService
             // 
             this.CanHandlePowerEvent = true;
             this.CanShutdown = true;
-            this.ServiceName = "TimedShutdownService";
+            this.ServiceName = "TimedNetworkShutdownService";
+            ((System.ComponentModel.ISupportInitialize)(this.timerWakeUp)).EndInit();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Timer timerWakeUp;
+        private System.Timers.Timer timerWakeUp;
     }
 }
