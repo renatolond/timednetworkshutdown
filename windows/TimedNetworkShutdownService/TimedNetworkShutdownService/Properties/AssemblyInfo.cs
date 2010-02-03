@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TimedShutdownService")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("TimedNetworkShutdownService")]
+[assembly: AssemblyDescription("A service which consults a server about shutting down the machine")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("UFRJ")]
-[assembly: AssemblyProduct("TimedShutdownService")]
-[assembly: AssemblyCopyright("Copyright © UFRJ 2009")]
+[assembly: AssemblyProduct("TimedNetworkShutdownService")]
+[assembly: AssemblyCopyright("Copyright © UFRJ 2009-2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -37,7 +37,7 @@ namespace WindowsService
 
             //# set in the constructor of WindowsService.cs
 
-            serviceInstaller.ServiceName = "TimedShutdownService";
+            serviceInstaller.ServiceName = "TimedNetowrkShutdownService";
 
             this.Installers.Add(serviceProcessInstaller);
             this.Installers.Add(serviceInstaller);
